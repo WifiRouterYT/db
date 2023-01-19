@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    transition: .2s linear;
+}
+
+body.dark {
+    background-color: #010409;
+    color: #c9d1d9;
+}
+
+body.dark nav {
+    background-color: #0d1117;
+    border-color: #21262d;
+}
+
+body.dark .collapsiblenav {
+    background-color: #0d1117;
+    border-color: #21262d;
+}
+
+nav {
+    background-color: #f6f8fa;
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid;
+    border-color: #d8dee4;
+    position: fixed;
+    top: 0;
+    display: inline;
+    transition: .2s linear;
+}
+
+nav p {
+    font-size: 24px;
+    margin-top: 7px;
+    display: inline-block;
+    margin-left: 18px;
+    cursor: pointer;
+    font-family: Kanit, sans-serif;
+}
+
+nav * {
+    display: inline;
+    font-family: Exo, sans-serif;
+    transition: 0s linear;
+}
+
+nav .menu {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 850px) {
+    nav .menu {
+        display: inline-block;
+    }
+
+    nav p {
+        margin-left: 12px;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+nav .right-side-icons {
+    margin-right: 12px;
+    
+}
+
+nav .right-side-icons p {
+    font-family: Exo, sans-serif;
+}
+
+nav .right-side-icons * {
+    float: right;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+nav .right-side-icons div {
+    margin-top: 0;
+}
+
+nav .right-side-icons .links .link {
+    height: 48px;
+    border-bottom: 1px solid;
+    width: calc(fit-content + 20px);
+    border-color: transparent;
+    margin-right: 0px;
+}
+
+nav .right-side-icons .links .selected {
+    border-color: #0087ca;
+}
+
+body.dark .right-side-icons .links .link:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.links .link:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+nav .right-side-icons .links .link i {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+nav .right-side-icons .links .link * {
+    margin-top: 15px;
+    margin-left: 6px;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+nav .right-side-icons i:hover {
+    transform: scale(1.05);
+}
+
+
+nav .theme-toggle {
+    font-size: 20px;
+}
+
+.collapsiblenav {
+    background-color: #f6f8fa;
+    height: calc(100% - 48px);
+    position: fixed;
+    border-right: 1px solid;
+    bottom: 0;
+    transition: .7s ease-in-out;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-color: #d8dee4;
+    width: 0px;
+}
+
+.collapsiblenav * {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#hamburger {
+    transition: .7s ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes open {
+    0%   {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+@keyframes close {
+    0%   {transform: rotate(360deg)}
+    100% {transform: rotate(0deg)}
+}
+
+body.dark .collapsiblenav div:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.collapsiblenav div:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.collapsiblenav .link {
+    font-family: Exo, sans-serif;
+    height: 36px;
+    border-right: 1px solid;
+    width: calc(fit-content + 20px);
+    border-color: transparent;
+    margin-right: 0px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.collapsiblenav .link p {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.collapsiblenav .two {
+    margin-left: 26px;
+}
+
+.collapsiblenav .link i {
+    margin-right: 15px;
+}
+
+.collapsiblenav .selected {
+    border-color: #0087ca;
+}
