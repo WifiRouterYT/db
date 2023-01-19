@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2ec349ebe.js" crossorigin="anonymous"></script>
+    <title>Dmitry's Blog</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <nav>
+        <div id="hamburger2">
+            <i class="fa-solid fa-bars menu" onclick="toggleMenu()" id="hamburger"></i>
+        </div>
+        <p onclick="window.location = '/';">Dmitry's Blog</p>
+        <div class="right-side-icons">
+            <i class="fa-solid fa-magnifying-glass search" style="margin-right: 20px"></i>
+            <i class="fa-solid fa-moon theme-toggle" id="theme-toggle" onclick="toggle_light_mode();"></i>
+            <div class="links">
+                <div class="link" style="margin-right: 20px;">
+                    <p>Raspberry Pi<i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="link">
+                    <p>Orange Pi Win Plus<i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="link">
+                    <p>MSP430<i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="link">
+                    <p>Atmel SAM4L-EK<i class="fa-solid fa-caret-down"></i></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="collapsiblenav" id="menu">
+        <br>
+        <div class="link">
+            <p><i class="fa-solid fa-caret-down"></i>Atmel SAM4L-EK</p>
+        </div>
+        <div class="link two">
+            <p>Hardware</p>
+        </div>
+        <div class="link two">
+            <p>Hello LED</p>
+        </div>
+        <div class="link two">
+            <p>Toolbox</p>
+        </div>
+        <div class="link">
+            <p><i class="fa-solid fa-caret-down"></i>MSP430</p>
+        </div>
+        <div class="link two">
+            <p>Getting tools ready</p>
+        </div>
+        <div class="link two">
+            <p>Hello world</p>
+        </div>
+        <div class="link two">
+            <p>Serial Output</p>
+        </div>
+        <div class="link">
+            <p><i class="fa-solid fa-caret-down"></i>Orange Pi Win Plus</p>
+        </div>
+        <div class="link two">
+            <p>Tools</p>
+        </div>
+        <div class="link two">
+            <p>Uboot</p>
+        </div>
+        <div class="link">
+            <p><i class="fa-solid fa-caret-down"></i>Raspberry Pi</p>
+        </div>
+        <div class="link two">
+            <p>Enable JTAG</p>
+        </div>
+        <div class="link two" style="height: 50px; line-height: 18px;">
+            <p>JTAG Hardware and</p>
+            <p>Connection</p>
+        </div>
+        <div class="link two">
+            <p>Open OCD</p>
+        </div>
+        <div class="link two">
+            <p>Toolbox</p>
+        </div>
+        <div class="link two">
+            <p>UART</p>
+        </div>
+    </div>
+
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
